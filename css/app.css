@@ -1,0 +1,264 @@
+/* Establecer los estilos predeterminados para los siguientes elementos */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* Establecer el estilo de los elementos HTML5 para navegadores antiguos */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+/* Establecer la altura de línea a 1 para el cuerpo */
+body {
+    line-height: 1;
+}
+
+/* Eliminar la lista de viñetas para las listas ordenadas y no ordenadas */
+ol,
+ul {
+    list-style: none;
+}
+
+/* Eliminar las comillas para las citas */
+blockquote,
+q {
+    quotes: none;
+}
+
+/* Eliminar los contenidos antes y después de las citas */
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+/* Establecer el estilo de la tabla */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/**********************************************************************************/
+
+
+/* Configuración general de la página */
+html {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Configuración del fondo y diseño de la página */
+body {
+    background-color: #60a9ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Configuración de los paneles de precios */
+.panel {
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px 15px;
+    width: 100%;
+    max-width: 960px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* Configuración de cada plan de precios */
+.pricing-plan {
+    border-bottom: 1px solid #e1f1ff;
+}
+
+.pricing-plan:last-child {
+    border-bottom: none;
+}
+
+/* Configuración de la imagen en cada plan de precios */
+.pricing-img {
+    margin-bottom: 25px;
+    max-width: 100%;
+}
+
+/* Configuración del encabezado en cada plan de precios */
+.pricing-header {
+    color: #888;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+/* Configuración de las características en cada plan de precios */
+.pricing-features {
+    margin: 50px 0 25px;
+    color: #016ff9;
+}
+
+/* Configuración de cada característica en cada plan de precios */
+.pricing-features-item {
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 12px;
+    line-height: 1.5;
+    padding: 15px 0;
+    border-top: 1px solid #e1f1ff;
+}
+
+.pricing-features-item:last-child {
+    border-bottom: 1px solid #e1f1ff;
+}
+
+/* Configuración del precio en cada plan de precios */
+.pricing-price {
+    color: #016ff9;
+    display: block;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+/* Configuración del botón en cada plan de precios */
+.pricing-button {
+    border: 1px solid #9dd1ff;
+    border-radius: 10px;
+    color: #348efe;
+    display: inline-block;
+    padding: 15px 35px;
+    text-decoration: none;
+    margin: 25px 0;
+    transition: background-color 200ms ease-in-out;
+}
+
+.pricing-button:hover,
+.pricing-button:focus {
+    background-color: #e1f1ff;
+}
+
+/* Configuración del botón destacado en cada plan de precios */
+.pricing-button.is-featured {
+    background-color: #48aaff;
+    color: white;
+}
+
+.pricing-button.is-featured:hover,
+.pricing-button.is-featured:focus {
+    background-color: #269aff;
+    color: white;
+}
+
+/* Configuración para pantallas más grandes */
+@media(min-width:900px) {
+    .panel {
+        flex-direction: row;
+    }
+
+    .pricing-plan {
+        border-bottom: none;
+        border-right: 1px solid #e1f1ff;
+        padding: 25px 50px;
+    }
+
+    .pricing-plan:last-child {
+        border-right: none;
+    }
+}
